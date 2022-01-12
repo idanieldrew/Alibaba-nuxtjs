@@ -24,7 +24,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/static/style.css'],
+  css: ['~/static/css/style.css'],
 
   loading:
   {
