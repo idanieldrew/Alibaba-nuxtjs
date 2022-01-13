@@ -10,7 +10,7 @@
         <NavLink to="/bus" body="اتوبوس" />
         <NavLink to="/tour" body="تور" />
         <NavLink to="/hotel" body="هتل" />
-        <NavLink to="/accomandation" body="ویلا و اقامتگاه" />
+        <NavLink to="/accommodation" body="ویلا و اقامتگاه" />
         <NavLink to="/" body="بیشتر" />
       </div>
       <div class="auth w-2/6 flex">
