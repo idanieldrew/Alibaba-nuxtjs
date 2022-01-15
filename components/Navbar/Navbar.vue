@@ -1,19 +1,30 @@
 <template>
-  <nav class="bg-gray-50 shadow-md p-5">
-    <div class="flex container mx-auto w-full justify-evenly">
-      <div class="logo w-1/6">
-        <span class="font-sans">alibaba.ir</span>
+  <nav class="bg-gray-50 shadow-md p-2 lg:p-5">
+    <div class="lg:flex container block lg:mx-auto w-full justify-between lg:justify-evenly">
+      <div class="flex flex-row my-2 lg:my-0 shadow-sm">
+        <div class="logo w-1/2 lg:w-1/6">
+          <span class="font-sans">alibaba.ir</span>
+        </div>
+        <div class="lg:hidden w-1/2 flex justify-end">
+          <button v-show="isVisible" @click="toggle">
+            close
+          </button>
+          <button v-show="! isVisible" @click="toggle">
+            open
+          </button>
+        </div>
       </div>
-      <div class="select flex w-4/6">
-        <NavLink to="/flight" body="پرواز" />
-        <NavLink to="/train" body="قطار" />
-        <NavLink to="/bus" body="اتوبوس" />
-        <NavLink to="/tour" body="تور" />
-        <NavLink to="/hotel" body="هتل" />
-        <NavLink to="/accommodation" body="ویلا و اقامتگاه" />
-        <NavLink to="/" body="بیشتر" />
+      <div class="select flex flex-col lg:flex-row justify-start my-3 lg:my-0 w-full lg:w-4/6"
+           :class="{hidden: ! isVisible}">
+        <NavLink to="/flight" body="پرواز"/>
+        <NavLink to="/train" body="قطار"/>
+        <NavLink to="/bus" body="اتوبوس"/>
+        <NavLink to="/tour" body="تور"/>
+        <NavLink to="/hotel" body="هتل"/>
+        <NavLink to="/accommodation" body="ویلا و اقامتگاه"/>
+        <NavLink to="/" body="بیشتر"/>
       </div>
-      <div class="auth w-2/6 flex">
+      <div class="auth w-2/6 hidden lg:flex">
         <div class="bill flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +34,7 @@
             width="24px"
             fill="#000000"
           >
-            <path d="M0,0h24v24H0V0z" fill="none" />
+            <path d="M0,0h24v24H0V0z" fill="none"/>
             <g>
               <path
                 d="M19.5,3.5L18,2l-1.5,1.5L15,2l-1.5,1.5L12,2l-1.5,1.5L9,2L7.5,3.5L6,2v14H3v3c0,1.66,1.34,3,3,3h12c1.66,0,3-1.34,3-3V2 L19.5,3.5z M15,20H6c-0.55,0-1-0.45-1-1v-1h10V20z M19,19c0,0.55-0.45,1-1,1s-1-0.45-1-1v-3H8V5h11V19z"
@@ -58,10 +69,16 @@
 
 <script>
 import NavLink from "./Nav-link";
+import {useToggle} from "../../assets/js/Navbar/responsive-navbar";
 
 export default {
   name: "Navbar",
-  components: { NavLink },
+  components: {NavLink},
+
+  setup() {
+    let {isVisible, toggle} = useToggle()
+    return {isVisible, toggle}
+  }
 };
 </script>
 

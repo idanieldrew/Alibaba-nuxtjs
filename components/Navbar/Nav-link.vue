@@ -1,8 +1,8 @@
 <template>
-  <ul class="px-5">
+  <ul class=" px-3 py-3 lg:px-5">
     <li>
-      <div class="links border-r-2 border-gray-300">
-        <nuxt-link :to="to" class="p-2 text-gray-700 hover:text-gray-500">
+      <div class="links border-none lg:border-r-2 lg:border-gray-300">
+        <nuxt-link :to="to" class="p-0 lg:p-2 text-gray-700 hover:text-gray-500">
           <span>{{ body }}</span>
         </nuxt-link>
       </div>
