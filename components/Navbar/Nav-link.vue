@@ -1,7 +1,7 @@
 <template>
-  <ul class=" px-3 py-3 lg:px-5">
+  <ul class=" px-3 py-3 lg:py-0 lg:px-5">
     <li>
-      <div class="links border-none lg:border-r-2 lg:border-gray-300">
+      <div class="links border-none">
         <nuxt-link :to="to" class="p-0 lg:p-2 text-gray-700 hover:text-gray-500">
           <span>{{ body }}</span>
         </nuxt-link>

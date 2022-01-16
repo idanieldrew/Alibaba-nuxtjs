@@ -1,9 +1,9 @@
 <template>
   <nav class="bg-gray-50 shadow-md p-2 lg:p-5">
     <div class="lg:flex container block lg:mx-auto w-full justify-between lg:justify-evenly">
-      <div class="flex flex-row my-2 lg:my-0 shadow-sm">
+      <div class="flex flex-row my-2 lg:my-0">
         <div class="logo w-1/2 lg:w-1/6">
-          <span class="font-sans">alibaba.ir</span>
+          <span class="font-extrabold">alibaba.ir</span>
         </div>
         <div class="lg:hidden w-1/2 flex justify-end">
           <button v-show="isVisible" @click="toggle">
@@ -14,7 +14,7 @@
           </button>
         </div>
       </div>
-      <div class="select flex flex-col lg:flex-row justify-start my-3 lg:my-0 w-full lg:w-4/6"
+      <div class="select lg:flex flex-col lg:flex-row justify-start my-3 lg:my-0 w-full lg:w-4/6"
            :class="{hidden: ! isVisible}">
         <NavLink to="/flight" body="پرواز"/>
         <NavLink to="/train" body="قطار"/>
