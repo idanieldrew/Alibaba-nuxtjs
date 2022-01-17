@@ -1,12 +1,15 @@
 <template>
 <div>
-  <Navbar />
+  <header>
+    <Navbar/>
+  </header>
   <nuxt-child />
 </div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar/Navbar";
+
 export default {
   name: "default",
   components: {
