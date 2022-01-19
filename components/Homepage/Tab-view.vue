@@ -21,7 +21,6 @@
               <div>
                 <ul class="px-4 py-2">
                   <li
-                    @click="specifyTravel('single-way')"
                     class="
                       border-b-2 border-blue-100
                       py-2
@@ -32,10 +31,7 @@
                       <span> یک طرفه </span>
                     </nuxt-link>
                   </li>
-                  <li
-                    @click="specifyTravel('sweep')"
-                    class="py-2 text-center"
-                  >
+                  <li class="py-2 text-center">
                     <nuxt-link to="/">
                       <span> رفت و برگشت </span>
                     </nuxt-link>
@@ -63,19 +59,17 @@ export default {
 
   computed: {
     travelType() {
-      return this.type[0] ? "یک طرفه" : "رفت و برگشت";
+      if (this.type[0] == "single-way") {
+        return "یک طرفه";
+      } else {
+        return "رفت و برگشت";
+      }
     },
   },
 
   methods: {
     open() {
       this.isOpen = !this.isOpen;
-    },
-
-    specifyTravel(value) {
-      alert(value);
-      this.type = value;
-      console.log(this.type)
     },
   },
 };
