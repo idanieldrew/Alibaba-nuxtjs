@@ -9,7 +9,9 @@ import Card from "./Card";
 
 export default {
   name: "Homepage",
-  components: {Card}
+  components: {
+    Card,
+  }
 }
 </script>
 

@@ -4,6 +4,7 @@
       <Hero />
       <Homepage class="absolute"/>
     </div>
+    <TabView />
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 
 import Hero from "../components/Hero/Hero";
 import Homepage from "../components/Homepage/Homepage";
+import TabView from "../components/Homepage/Tab-view";
 
 export default {
   name: 'index',
   components: {
     Hero,
-    Homepage
+    Homepage,
+    TabView
   }
 };
 </script>
