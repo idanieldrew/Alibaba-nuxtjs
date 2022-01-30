@@ -1,4 +1,4 @@
-<template xmlns="http://www.w3.org/1999/html">
+<template>
   <div class="bg-gray-100 rounded-t-2xl pt-5 w-10/12 mx-auto">
     <div class="mx-auto flex flex-row">
       <ul class="mx-auto flex">

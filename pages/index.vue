@@ -12,7 +12,7 @@
 
 import Hero from "../components/Hero/Hero";
 import Homepage from "../components/Homepage/Homepage";
-import TabView from "../components/Homepage/Tab-view";
+import TabView from "../components/Homepage/Tab-view/Tab-view.vue";
 
 export default {
   name: 'index',
