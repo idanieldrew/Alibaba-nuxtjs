@@ -1,7 +1,7 @@
 <template>
-  <div class="flex my-10 container mx-auto w-8/12">
-    <Suggestion class="mx-5" />
-    <Suggestion class="mx-5" />
+  <div class="flex container mx-auto w-7/12">
+    <Suggestion class="ml-1.5" />
+    <Suggestion class="mr-5" />
   </div>
 </template>
 
