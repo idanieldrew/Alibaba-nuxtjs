@@ -1,5 +1,5 @@
 <template>
- <div class="flex mt-5 w-full">
+ <div class="flex mt-5 w-full static">
       <div class="flex w-5/12">
         <div class="flex justify-start">
           <input
@@ -100,7 +100,8 @@
                   w-full
                   focus:ring-2 focus:border-gray-400
                 "
-              />           </span>
+              />
+              </span>
           </div>
           <div class="w-2/12 mr-1.5">
             <button class="bg-yellow-400 w-full py-2.5 text-black text-lg rounded-lg hover:bg-yellow-500 ring-1 ring-red-400" type="button">جستجو</button>

@@ -5,7 +5,7 @@
       <Homepage class="absolute" />
     </div>
     <TabView />
-    <Main-Suggestion />
+    <Main-Suggestion /> 
   </div>
 </template>
 

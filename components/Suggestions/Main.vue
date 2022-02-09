@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-4 w-8/12 mx-auto container">
+  <div class="grid grid-cols-2 gap-4 w-8/12 mx-auto container py-16">
     <Suggestion>
       <div class="w-full flex">
         <div class="my-auto px-9 relative">
