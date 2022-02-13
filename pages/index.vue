@@ -5,7 +5,8 @@
       <Homepage class="absolute" />
     </div>
     <TabView />
-    <Main-Suggestion /> 
+    <Main-Suggestion />
+    <Question />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Hero from "../components/Hero/Hero";
 import Homepage from "../components/Homepage/Homepage";
 import TabView from "../components/Homepage/Tab-view/Tab-view.vue";
 import MainSuggestion from "@/components/Suggestions/Main.vue";
+import Question from "@/components/Questions/Question.vue";
 
 export default {
   name: "index",
@@ -22,6 +24,7 @@ export default {
     Homepage,
     TabView,
     MainSuggestion,
+    Question,
   },
 };
 </script>
