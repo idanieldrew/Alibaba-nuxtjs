@@ -15,7 +15,7 @@ import Hero from "../components/Hero/Hero";
 import Homepage from "../components/Homepage/Homepage";
 import TabView from "../components/Homepage/Tab-view/Tab-view.vue";
 import MainSuggestion from "@/components/Suggestions/Main.vue";
-import Question from "@/components/Questions/Question.vue";
+import Question from "@/components/Questions/All.vue";
 
 export default {
   name: "index",

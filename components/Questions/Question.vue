@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import Answer from "./answer.vue";
+import Answer from "./Answer.vue";
 export default {
   data() {
     return {
